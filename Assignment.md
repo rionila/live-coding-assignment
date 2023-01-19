@@ -4,9 +4,9 @@
 2. Create endpoints to Get All Orders, Create Order, Update Order, Get All Orders Created After Date;
 3. Create endpoints to Get All Users, Create User, Delete User;
 4. Create endpoint to get All Orders for a User;
-5. Using SecurityFilterChain, make it so that in order to call any endpoint the user must have the predefined role: "default", except for the paths provided in the OPEN_URLS array;
-6. Make it so that in order to call the Create User and Delete User endpoint, the user must have the predefined role: "admin";
-7. Create a front-end project (Angular/React) in which to have a page with a date input to send to the back-end in order to get the list of orders after that date and display in a table;
+5. Create a front-end project (Angular/React) in which to have a page with a date input to send to the back-end in order to get the list of orders after that date and display in a table;
+6. Update Security configuration so that in order to call any endpoint the user must have the predefined role: "default", except for the paths provided in the OPEN_URLS array (hint: Using SecurityFilterChain Bean);
+7. Make it so that in order to call the Create User and Delete User endpoint, the user must have the predefined role: "admin";
 
 
 
