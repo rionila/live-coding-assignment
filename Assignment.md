@@ -7,7 +7,7 @@
 5. Call a 3rd party service and append the data into the Orders. URL - https://dummyjson.com/comments/10
 6. Create a front-end project (Angular/React) in which to have a page with a date input to send to the back-end in order to get the list of orders after that date and display in a table;
 7. Create routes to another component. Restrict access to this component if you are not an admin
-8. Update Security configuration so that in order to call any endpoint the user must have the predefined role: "default", except for the paths provided in the OPEN_URLS array (hint: Using SecurityFilterChain Bean);
+8. Update Security configuration so that in order to call any endpoint the user must have the predefined role: "default", except for the paths provided in the OPEN_URLS array;
 9. Make it so that in order to call the Create User and Delete User endpoint, the user must have the predefined role: "admin";
 
 
