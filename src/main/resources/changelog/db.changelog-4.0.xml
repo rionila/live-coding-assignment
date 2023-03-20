@@ -1,0 +1,61 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="ruben.ionila" id="4">
+        <insert tableName="order">
+            <column name="created_date" value="2022-08-25"></column>
+            <column name="items_count" value="2"></column>
+            <column name="type" value="sales"></column>
+            <column name="expected" value="false"></column>
+            <column name="client" value="dummy client"></column>
+        </insert>
+        <insert tableName="order">
+            <column name="created_date" value="2022-09-25"></column>
+            <column name="items_count" value="8"></column>
+            <column name="type" value="return"></column>
+            <column name="expected" value="true"></column>
+            <column name="client" value="dummy client"></column>
+        </insert>
+        <insert tableName="order">
+            <column name="created_date" value="2022-09-30"></column>
+            <column name="items_count" value="20"></column>
+            <column name="type" value="sales"></column>
+            <column name="expected" value="false"></column>
+            <column name="client" value="dummy client"></column>
+        </insert>
+        <insert tableName="order">
+            <column name="created_date" value="2023-01-25"></column>
+            <column name="items_count" value="12"></column>
+            <column name="type" value="sales"></column>
+            <column name="expected" value="false"></column>
+            <column name="client" value="dummy client"></column>
+        </insert>
+        <insert tableName="order">
+            <column name="created_date" value="2023-02-10"></column>
+            <column name="items_count" value="28"></column>
+            <column name="type" value="sales"></column>
+            <column name="expected" value="false"></column>
+            <column name="client" value="dummy client"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="name" value="John"></column>
+            <column name="surname" value="Doe"></column>
+            <column name="country" value="Romania"></column>
+            <column name="city" value="Bucharest"></column>
+            <column name="address" value="dummy address 123"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="name" value="Ion"></column>
+            <column name="surname" value="Popescu"></column>
+            <column name="country" value="Romania"></column>
+            <column name="city" value="Bucharest"></column>
+            <column name="address" value="dummy address 345"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="name" value="John"></column>
+            <column name="surname" value="Sullivan"></column>
+            <column name="country" value="Netherlands"></column>
+            <column name="city" value="Utrecht"></column>
+            <column name="address" value="dummy address 45546"></column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
