@@ -1,0 +1,13 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="ruben.ionila" id="3">
+        <createTable tableName="order_user">
+            <column name="id_order" type="int4">
+                <constraints foreignKeyName="order_id_fk" referencedTableName="order" referencedColumnNames="id"/>
+            </column>
+            <column name="id_user" type="int4">
+                <constraints foreignKeyName="user_id_fk" referencedTableName="user" referencedColumnNames="id"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
