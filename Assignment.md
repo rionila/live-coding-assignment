@@ -4,7 +4,7 @@
 2. Create endpoints to Update Order, Get All Orders Created After Date;
 3. Create endpoints to Create a User;
 4. Create endpoint to get All Orders for a User; (overwrite the Jpa method with a native query && return all orders without the "client" property without creating a separate DTO); 
-5. Call a 3rd party service and append the data into the Orders. URL - https://dummyjson.com/comments/10
+5. Call a 3rd party service to get another list of users (URL - https://dummyjson.com/docs/users). Create a method that returns the number of users in the database that are from the same city as any users from the response returned by the 3rd party service.
 6. Create a front-end project (Angular/React) in which to have a page with a date input to send to the back-end in order to get the list of orders after that date and display in a table;
 7. Create routes to another component. Restrict access to this component if you are not an admin
 8. Update Security configuration so that in order to call any endpoint the user must have the predefined role: "default", except for the paths provided in the OPEN_URLS array;
