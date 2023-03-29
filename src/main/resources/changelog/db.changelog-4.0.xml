@@ -39,15 +39,15 @@
         <insert tableName="user">
             <column name="name" value="John"></column>
             <column name="surname" value="Doe"></column>
-            <column name="country" value="Romania"></column>
-            <column name="city" value="Bucharest"></column>
+            <column name="country" value="USA"></column>
+            <column name="city" value="Washington"></column>
             <column name="address" value="dummy address 123"></column>
         </insert>
         <insert tableName="user">
-            <column name="name" value="Ion"></column>
-            <column name="surname" value="Popescu"></column>
-            <column name="country" value="Romania"></column>
-            <column name="city" value="Bucharest"></column>
+            <column name="name" value="Jim"></column>
+            <column name="surname" value="Johnson"></column>
+            <column name="country" value="USA"></column>
+            <column name="city" value="Nashville"></column>
             <column name="address" value="dummy address 345"></column>
         </insert>
         <insert tableName="user">
