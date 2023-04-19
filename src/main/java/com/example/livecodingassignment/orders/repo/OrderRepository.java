@@ -1,4 +1,4 @@
 package com.example.livecodingassignment.orders.repo;
 
-public class OrderRepo {
+public interface OrderRepository {
 }
